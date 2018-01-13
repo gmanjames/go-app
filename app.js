@@ -16,7 +16,7 @@ server.listen('3000');
 
 // Application
 let numUsers = 0,
-    move      = 'b',
+    move     = 'b',
     locked   = true;
 
 io.on('connection', socket => {
@@ -67,7 +67,12 @@ io.on('connection', socket => {
 });
 
 io.on('disconnect', socket => {
-    if (numUsers > 0) numUsers--;
+    if (numUsers > 0)
+        numUsers--;
+    else if (numUsers === 0) {
+        locked = true;
+        move   = 'b';
+    }
 });
 
 
