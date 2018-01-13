@@ -20,10 +20,8 @@ function handleMove(evt) {
     ||  (x === 9 && y === 1)
     ||  (x === 9 && x === y))
         image = 'corner';
-
     else if (x > 1 && x < 9 && y > 1 && y < 9)
         image = 'middle';
-
     else
         image = 'side';
 
