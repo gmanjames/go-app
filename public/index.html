@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <link rel="manifest" href="site.webmanifest">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
 
         <style>
             * {
@@ -21,13 +22,18 @@
 
             body {
                 margin: 0;
-                padding-top: 150px;
+                padding: 0 16px;
+                padding-top: 75px;
                 background-color: hsl(0, 0%, 95%);
             }
 
             .wrap {
                 width: 450px;
                 margin: 0 auto;
+            }
+
+            input[name="username"] {
+                margin-bottom: 8px;
             }
 
             .board {
@@ -109,7 +115,7 @@
     </head>
     <body>
         <div class="wrap">
-            <input type="text" name="username" placeholder="username">
+            <input  id="username" type="text" name="username" placeholder="username">
             <button id="submit" type="submit">Start</button>
             <div class="board">
                 <div class="row">
