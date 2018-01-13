@@ -1,0 +1,21 @@
+{
+  "name": "go-app",
+  "version": "1.0.0",
+  "description": "A live play online Go boardgame application.",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "keywords": [
+    "go",
+    "boardgame",
+    "socket.io"
+  ],
+  "author": "Garren Ijames",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "server": "^1.0.17",
+    "socket.io": "^2.0.4"
+  }
+}
